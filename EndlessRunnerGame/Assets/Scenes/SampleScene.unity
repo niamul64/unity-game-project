@@ -570,7 +570,7 @@ MonoBehaviour:
   minX: 3
   maxY: 4.33
   minY: -4.4
-  timeBetweenSpawn: 0.73
+  timeBetweenSpawn: 0.65
 --- !u!1 &1175674390
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2060287802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d317cfdda6d2d4392f9d8cfdaf1071, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f8dcd34f59a2eb4692533bb3f5366ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 7733943346366946780, guid: dafdda8258c06dd4d8b00db333bf5578, type: 3}
@@ -743,4 +743,4 @@ MonoBehaviour:
   minX: 3
   maxY: 4
   minY: -4
-  timeBetweenSpawn: 1.9
+  timeBetweenSpawn: 2
