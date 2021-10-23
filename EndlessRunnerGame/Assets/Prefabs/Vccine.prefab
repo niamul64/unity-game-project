@@ -92,6 +92,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7733943346366946781}
   - component: {fileID: 4909900156919730485}
+  - component: {fileID: 1563452872734148983}
+  - component: {fileID: 3984566923530191970}
+  - component: {fileID: 7391388333643200564}
   m_Layer: 0
   m_Name: Vccine
   m_TagString: Untagged
@@ -126,3 +129,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf56d77cabce7484a9064746d0c7ab72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &1563452872734148983
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733943346366946780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.9751332, y: 2.5756288}
+  - {x: -2.610569, y: 2.011785}
+  - {x: -2.3513932, y: 1.480911}
+  - {x: -1.911133, y: 1.2611706}
+  - {x: -1.5386705, y: 1.2599174}
+  - {x: -1.0662541, y: 0.7822119}
+  - {x: -1.3075789, y: 0.37748075}
+  - {x: -1.2181003, y: 0.25279084}
+  - {x: -0.94021577, y: 0.4055798}
+  - {x: 0.8926665, y: -1.5302218}
+  - {x: 1.6462412, y: -1.7826949}
+  - {x: 2.5756283, y: -2.5990436}
+  - {x: 1.7292143, y: -1.6563942}
+  - {x: 1.504812, y: -0.93317467}
+  - {x: -0.34911948, y: 0.9815173}
+  - {x: -0.1840325, y: 1.2717383}
+  - {x: -0.30939066, y: 1.3344653}
+  - {x: -0.74726045, y: 1.0275599}
+  - {x: -1.2726262, y: 1.6273798}
+  - {x: -1.259844, y: 1.9706138}
+  - {x: -1.5989754, y: 2.5548866}
+  - {x: -1.9351399, y: 2.5522137}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &3984566923530191970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733943346366946780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf56d77cabce7484a9064746d0c7ab72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &7391388333643200564
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733943346366946780}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
