@@ -21,10 +21,7 @@ public class VaccineVanish : MonoBehaviour
         if (collision.tag == "Border") { 
             Destroy(this.gameObject);
         }
-        if (collision.tag == "Player")
-        {
-            Destroy(this.gameObject);
-        }
+
     }
 
 }

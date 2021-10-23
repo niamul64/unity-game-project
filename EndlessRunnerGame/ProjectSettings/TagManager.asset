@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bar
   - Border
+  - Vac
   layers:
   - Default
   - TransparentFX

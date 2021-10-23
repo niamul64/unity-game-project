@@ -23,4 +23,10 @@ public class ScoreManager : MonoBehaviour
             scoreText.text = ((int)score).ToString("Score: 0");
         }
     }
+
+
+    public void Boost()
+    {
+        score += 10;
+    }
 }

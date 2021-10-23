@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     public float playerSpeed;// How fast our player will be Moving
     private Rigidbody2D rd;//
     private Vector2 playerDirection;// process --> players input
+    public ScoreManager sm;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +24,21 @@ public class PlayerMove : MonoBehaviour
                                                                  // normilized is used to make the movement consistant
                                                                  //now update form FixedUpdate() finction
 
-
-
-
     }
 
     void FixedUpdate() //called ones per physics frame 
     {
         rd.velocity = new Vector2(0, playerDirection.y * playerSpeed);// anythin that apply in rigid body shold happen in FixedUpadate()
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Vac")
+        {
+            sm.Boost();
+        }
+
+    }
+
+
 
 }

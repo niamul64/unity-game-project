@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 7
+  sm: {fileID: 1366723157}
 --- !u!50 &1175674392
 Rigidbody2D:
   serializedVersion: 4
@@ -1511,7 +1512,7 @@ GameObject:
   - component: {fileID: 2060287804}
   m_Layer: 0
   m_Name: VaccinePoints
-  m_TagString: Untagged
+  m_TagString: Vac
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
