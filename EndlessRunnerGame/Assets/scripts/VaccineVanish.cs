@@ -18,8 +18,13 @@ public class VaccineVanish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Border")
+        if (collision.tag == "Border") { 
             Destroy(this.gameObject);
+        }
+        if (collision.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 }
