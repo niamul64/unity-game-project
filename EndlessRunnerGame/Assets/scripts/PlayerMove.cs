@@ -18,9 +18,10 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
         float directionY = Input.GetAxisRaw("Vertical"); //wich key user is pressing , if the user is presing "up arrow key", then directionY=1,
                                                          // if "down arrow key", then directionY=-1,
-        playerDirection = new Vector2(0, directionY).normalized; // 0 -> not moving in x axis, directionY is the input, 1/-1
+        playerDirection = new Vector2(horizontal, directionY).normalized; // 0 -> not moving in x axis, directionY is the input, 1/-1
                                                                  // normilized is used to make the movement consistant
                                                                  //now update form FixedUpdate() finction
 
@@ -28,7 +29,7 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate() //called ones per physics frame 
     {
-        rd.velocity = new Vector2(0, playerDirection.y * playerSpeed);// anythin that apply in rigid body shold happen in FixedUpadate()
+        rd.velocity = new Vector2(playerDirection.x * playerSpeed, playerDirection.y * playerSpeed);// anythin that apply in rigid body shold happen in FixedUpadate()
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
